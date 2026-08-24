@@ -20,7 +20,6 @@ spring:
       port: ${REDIS_PORT:6379}
       password: ${REDIS_PASSWORD:Password@123}
   kafka:
-    listener:
     bootstrap-servers: ${KAFKA_BROKERS:localhost:29092}
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
